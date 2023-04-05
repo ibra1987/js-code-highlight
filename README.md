@@ -12,3 +12,7 @@ git clone https://github.com/ibra1987/js-code-highlight.git
 npm install
 npm run dev
 ```
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
