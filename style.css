@@ -22,9 +22,12 @@ body {
 .app {
   width: 100%;
   margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .wrapper {
-  width: 100%;
+  width: 40%;
 }
 
 .code_container_basic {
@@ -33,6 +36,7 @@ body {
   width: 100%;
   padding: 15px;
   color: lightgray;
+  border-radius: 5px;
   background-color: #404258;
 }
 .token {
@@ -40,5 +44,5 @@ body {
   color: #f8d303;
 }
 .keyword {
-  color: #1c82ad;
+  color: #f55c71;
 }

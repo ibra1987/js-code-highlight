@@ -2,7 +2,6 @@ import "./style.css";
 
 import applyBasicStyle from "./applyBasicStyle";
 import applyTokenStyle from "./applyTokenStyle";
-import lexer from "./lexer";
 
 document.addEventListener("DOMContentLoaded", async () => {
   const code_containers = document.getElementsByClassName("code-js");
