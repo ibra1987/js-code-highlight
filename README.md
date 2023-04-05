@@ -8,7 +8,6 @@ the project is in Vanilla JS with [Vite](https://vitejs.dev/) as build tools.
 
 ```bash
 git clone https://github.com/ibra1987/js-code-highlight.git
-
 npm install
 npm run dev
 ```
