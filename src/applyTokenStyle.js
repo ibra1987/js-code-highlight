@@ -1,4 +1,4 @@
-import { jsKeywords, jsTokens } from "./assets";
+import { jsKeywords, jsTokens } from "../assets";
 
 export default function applyTokenStyle(code) {
   jsTokens.map((token) => {

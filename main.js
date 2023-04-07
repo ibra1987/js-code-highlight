@@ -1,7 +1,6 @@
 import "./style.css";
-
-import applyBasicStyle from "./applyBasicStyle";
-import applyTokenStyle from "./applyTokenStyle";
+import Lexer from "./src/Lexer";
+import applyBasicStyle from "./src/applyBasicStyle";
 
 document.addEventListener("DOMContentLoaded", async () => {
   const code_containers = document.getElementsByClassName("code-js");
@@ -13,8 +12,10 @@ document.addEventListener("DOMContentLoaded", async () => {
   applyBasicStyle(code_containers_arr);
   code_containers_arr.map((code_div) => {
     let code = code_div.innerHTML;
+    const lexer = new Lexer(code);
 
-    let fcode = applyTokenStyle(code);
-    code_div.innerHTML = fcode;
+    const parsedCode = lexer.parse();
+
+    code_div.innerHTML = parsedCode;
   });
 });
